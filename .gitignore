@@ -1,0 +1,17 @@
+# 1. Ignore everything at all directory depths
+*
+
+# 2. Un-ignore all directories so Git can traverse them
+!*/
+
+# 3. Un-ignore Jupyter notebook files anywhere
+!*.ipynb
+
+# 4. Un-ignore the .gitignore file itself so it can be tracked
+!.gitignore
+
+# 5. Explicitly re-ignore specific directories so Git does not track notebooks inside them
+.venv/
+venv/
+.ipynb_checkpoints/
+__pycache__/
